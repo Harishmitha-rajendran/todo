@@ -7,8 +7,9 @@ import EditTodoForm from './EditTodoForm';
 
 function TodoWrapper ()  {
 
-  if(localStorage.getItem("todolist")===null)
-  localStorage.setItem("todolist",JSON.stringify([]));
+
+  
+
 
   const [value,setValue]=useState('');
   const [todos,setTodos]=useState(JSON.parse(localStorage.getItem("todolist"))) ; 
